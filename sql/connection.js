@@ -1,4 +1,5 @@
 const mysql = require('mysql')
+const password = require('../config')
 
 class Connection {
   constructor() {
@@ -7,9 +8,9 @@ class Connection {
 
       const config = {
         connectionLimit: 100,
-        host: 'localhost',
+        host: '35.222.68.207',
         user: 'root',
-        password: 'password',
+        password: password,
         database: 'admin'
       }
 
